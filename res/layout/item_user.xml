@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+     >
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_alignBaseline="@+id/ivUserIcon"
+        android:layout_toRightOf="@+id/ivUserIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="6dp"
+        android:text="Sarah"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvName"
+        android:layout_toRightOf="@+id/tvName"
+        android:paddingRight="6dp"
+        android:text="from " />
+
+    <TextView
+        android:id="@+id/tvHometown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvName"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="San Marco"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/ivUserIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/user_icon" />
+
+</RelativeLayout>
