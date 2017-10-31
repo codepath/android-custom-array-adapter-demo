@@ -16,11 +16,8 @@ public class CustomListActivity extends Activity {
 	}
 
 	private void populateUsersList() {
-		// Construct the data source
 		ArrayList<User> arrayOfUsers = User.getUsers();
-		// Create the adapter to convert the array to views
 		CustomUsersAdapter adapter = new CustomUsersAdapter(this, arrayOfUsers);
-		// Attach the adapter to a ListView
 		ListView listView = (ListView) findViewById(R.id.lvUsers);
 		listView.setAdapter(adapter);
 	}
